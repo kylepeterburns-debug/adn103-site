@@ -62,13 +62,74 @@
     }
   </style>
   <script>
+    // Navigation function
     function showPage(pageId) {
       document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
       document.getElementById(pageId).style.display = 'block';
+      if (pageId === 'schedule') {
+        loadWeeklySchedule();
+      }
     }
+
+    // Load weeks.json dynamically and show in the Weekly Schedule tab
+    async function loadWeeklySchedule() {
+      const container = document.getElementById("schedule");
+      container.innerHTML = "<h2>Weekly Schedule</h2><p>Loading...</p>";
+
+      try {
+        const response = await fetch("weeks.json");
+        const weeks = await response.json();
+
+        let html = "";
+        weeks.forEach((week) => {
+          html += `
+            <div class="week-card" style="
+              background:#ffffff;
+              border:2px solid #f8bbd0;
+              border-radius:12px;
+              margin:1rem 0;
+              padding:1rem 1.5rem;
+              box-shadow:0 2px 6px rgba(0,0,0,0.08);
+            ">
+              <h3 style="color:#90caf9;margin-top:0;">${week.title}</h3>
+              <p style="font-weight:bold;color:#555;">${week.date}</p>
+
+              ${week.topics?.length ? `
+                <h4 style="color:#f06292;">Topics</h4>
+                <ul>${week.topics.map(t => `<li>${t}</li>`).join("")}</ul>
+              ` : ""}
+
+              ${week.readings?.length ? `
+                <h4 style="color:#f06292;">Readings</h4>
+                <ul>${week.readings.map(r => `<li>${r}</li>`).join("")}</ul>
+              ` : ""}
+
+              ${week.assignments?.length ? `
+                <h4 style="color:#f06292;">Assignments</h4>
+                <ul>${week.assignments.map(a => `<li>${a}</li>`).join("")}</ul>
+              ` : ""}
+
+              ${week.resources?.length ? `
+                <h4 style="color:#f06292;">Resources</h4>
+                <ul>
+                  ${week.resources.map(res => 
+                    `<li><a href="${res.url}" target="_blank">${res.title}</a></li>`
+                  ).join("")}
+                </ul>
+              ` : ""}
+            </div>
+          `;
+        });
+
+        container.innerHTML = `<h2>Weekly Schedule</h2>${html}`;
+      } catch (err) {
+        container.innerHTML = `<p style="color:red;">Error loading schedule. Make sure weeks.json is in the same folder as this HTML file.</p>`;
+      }
+    }
+
     window.onload = function() {
       showPage('home');
-    }
+    };
   </script>
 </head>
 <body>
@@ -76,6 +137,7 @@
     <h1>ADN103 Pediatric Nursing Care</h1>
     <p>Fall 2025 — Cohort 24</p>
   </header>
+
   <nav>
     <a href="#" onclick="showPage('home')">Home</a>
     <a href="#" onclick="showPage('schedule')">Weekly Schedule</a>
@@ -83,22 +145,26 @@
     <a href="#" onclick="showPage('resources')">Resources</a>
     <a href="#" onclick="showPage('contact')">Contact</a>
   </nav>
+
   <section id="home">
     <h2>Welcome!</h2>
     <p>Welcome to the ADN103 Pediatric Nursing Care course. Use the tabs above to access your weekly schedule, submit work, or find course resources. Stay organized and check back often for updates.</p>
   </section>
+
   <section id="schedule" style="display:none;">
     <h2>Weekly Schedule</h2>
-    <p>Each week’s objectives, readings, and assignments will appear here. (You can later connect your <code>weeks.json</code> data dynamically if desired.)</p>
+    <p>Loading schedule...</p>
   </section>
+
   <section id="submit" style="display:none;">
     <h2>Submit Work</h2>
-    <p>Submit assignments using the class Google Form or email your instructor. Example:</p>
+    <p>Submit assignments using the class Google Form or email your instructor:</p>
     <ul>
       <li><a href="https://forms.gle/" target="_blank">Google Form Submission</a></li>
       <li>Email: <a href="mailto:kylepeterburns@gmail.com">kylepeterburns@gmail.com</a></li>
     </ul>
   </section>
+
   <section id="resources" style="display:none;">
     <h2>Course Resources</h2>
     <ul>
@@ -106,74 +172,17 @@
       <li><a href="#">Growth & Development Slides</a></li>
     </ul>
   </section>
+
   <section id="contact" style="display:none;">
     <h2>Contact</h2>
-    <p><strong>Instructor:</strong> Kyle Belinfante‑Burns<br>
+    <p><strong>Instructor:</strong> Kyle Belinfante-Burns<br>
     <strong>Email:</strong> <a href="mailto:kylepeterburns@gmail.com">kylepeterburns@gmail.com</a><br>
     <strong>Office Hours:</strong> By appointment<br>
     <strong>Campus:</strong> High Desert Medical College</p>
   </section>
+
   <footer>
     &copy; 2025 ADN103 Pediatric Nursing Care | Designed for educational use
-  </footer><script>
-// Load weeks.json dynamically and show in the Weekly Schedule tab
-async function loadWeeklySchedule() {
-  const container = document.getElementById("schedule");
-  container.innerHTML = "<h2>Weekly Schedule</h2><p>Loading...</p>";
-
-  try {
-    const response = await fetch("weeks.json");
-    const weeks = await response.json();
-
-    let html = "";
-    weeks.forEach((week) => {
-      html += `
-        <div class="week-card" style="
-          background:#ffffff;
-          border:2px solid #f8bbd0;
-          border-radius:12px;
-          margin:1rem 0;
-          padding:1rem 1.5rem;
-          box-shadow:0 2px 6px rgba(0,0,0,0.08);
-        ">
-          <h3 style="color:#90caf9;margin-top:0;">${week.title}</h3>
-          <p style="font-weight:bold;color:#555;">${week.date}</p>
-
-          ${week.topics?.length ? `
-            <h4 style="color:#f06292;">Topics</h4>
-            <ul>${week.topics.map(t => `<li>${t}</li>`).join("")}</ul>
-          ` : ""}
-
-          ${week.readings?.length ? `
-            <h4 style="color:#f06292;">Readings</h4>
-            <ul>${week.readings.map(r => `<li>${r}</li>`).join("")}</ul>
-          ` : ""}
-
-          ${week.assignments?.length ? `
-            <h4 style="color:#f06292;">Assignments</h4>
-            <ul>${week.assignments.map(a => `<li>${a}</li>`).join("")}</ul>
-          ` : ""}
-
-          ${week.resources?.length ? `
-            <h4 style="color:#f06292;">Resources</h4>
-            <ul>
-              ${week.resources.map(res => 
-                `<li><a href="${res.url}" target="_blank">${res.title}</a></li>`
-              ).join("")}
-            </ul>
-          ` : ""}
-        </div>
-      `;
-    });
-
-    container.innerHTML = `<h2>Weekly Schedule</h2>${html}`;
-  } catch (err) {
-    container.innerHTML = `<p style="color:red;">Error loading schedule. Make sure weeks.json is in the same folder as this HTML file.</p>`;
-  }
-}
-
-// Auto-load when the page opens
-window.addEventListener("load", loadWeeklySchedule);
-</script>
+  </footer>
 </body>
 </html>
