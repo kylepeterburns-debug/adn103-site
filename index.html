@@ -116,5 +116,65 @@
   <footer>
     &copy; 2025 ADN103 Pediatric Nursing Care | Designed for educational use
   </footer>
-</body>
+</body<script>
+// Load weeks.json dynamically and show in the Weekly Schedule tab
+async function loadWeeklySchedule() {
+  const container = document.getElementById("schedule");
+  container.innerHTML = "<h2>Weekly Schedule</h2><p>Loading...</p>";
+
+  try {
+    const response = await fetch("weeks.json");
+    const weeks = await response.json();
+
+    let html = "";
+    weeks.forEach((week) => {
+      html += `
+        <div class="week-card" style="
+          background:#ffffff;
+          border:2px solid #f8bbd0;
+          border-radius:12px;
+          margin:1rem 0;
+          padding:1rem 1.5rem;
+          box-shadow:0 2px 6px rgba(0,0,0,0.08);
+        ">
+          <h3 style="color:#90caf9;margin-top:0;">${week.title}</h3>
+          <p style="font-weight:bold;color:#555;">${week.date}</p>
+
+          ${week.topics?.length ? `
+            <h4 style="color:#f06292;">Topics</h4>
+            <ul>${week.topics.map(t => `<li>${t}</li>`).join("")}</ul>
+          ` : ""}
+
+          ${week.readings?.length ? `
+            <h4 style="color:#f06292;">Readings</h4>
+            <ul>${week.readings.map(r => `<li>${r}</li>`).join("")}</ul>
+          ` : ""}
+
+          ${week.assignments?.length ? `
+            <h4 style="color:#f06292;">Assignments</h4>
+            <ul>${week.assignments.map(a => `<li>${a}</li>`).join("")}</ul>
+          ` : ""}
+
+          ${week.resources?.length ? `
+            <h4 style="color:#f06292;">Resources</h4>
+            <ul>
+              ${week.resources.map(res => 
+                `<li><a href="${res.url}" target="_blank">${res.title}</a></li>`
+              ).join("")}
+            </ul>
+          ` : ""}
+        </div>
+      `;
+    });
+
+    container.innerHTML = `<h2>Weekly Schedule</h2>${html}`;
+  } catch (err) {
+    container.innerHTML = `<p style="color:red;">Error loading schedule. Make sure weeks.json is in the same folder as this HTML file.</p>`;
+  }
+}
+
+// Auto-load when the page opens
+window.addEventListener("load", loadWeeklySchedule);
+</script>
+>
 </html>
