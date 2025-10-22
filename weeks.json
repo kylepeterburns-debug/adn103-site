@@ -1,270 +1,164 @@
 [
   {
-    "title": "Week 1 \u2014 Growth & Development",
-    "date": "Sept 8\u201314",
+    "title": "Week 1 — Growth & Development",
+    "date": "Sept 8 – Sept 14",
     "topics": [
-      "Physical, cognitive, psychosocial development (Erikson, Piaget, Kohlberg)",
-      "Anticipatory guidance across ages",
-      "Medication Math review"
+      "Physical, cognitive, psychosocial development across infancy through adolescence",
+      "Erikson, Piaget, Kohlberg developmental theories"
     ],
     "readings": [
-      "Ch 3\u20137: Growth & Development (Infant \u2192 Adolescent)"
+      "Ch. 3–7: Growth and Development of the Newborn, Infant, Toddler, Preschooler, and School-Age Child"
     ],
     "assignments": [
-      "PrepU Ch 3\u20135 due Sept 22 @ 23:00",
-      "Clinical skills: Sept 4, 5, 13",
-      "Medication Math Exam #1 on Sept 22"
+      "PrepU Chapters 3–5 due Sept 22 @ 23:00",
+      "vSim Introduction to Pediatric Growth"
     ],
-    "notes": [],
-    "resources": []
+    "resources": [
+      { "title": "Week 1 Lecture Slides", "url": "docs/week1-growth-development.pdf" }
+    ]
   },
   {
-    "title": "Week 2 \u2014 Growth, Pain, Assessment",
-    "date": "Sept 15\u201321",
+    "title": "Week 2 — Pain Management in Children",
+    "date": "Sept 15 – Sept 21",
     "topics": [
-      "Health assessment of children",
-      "Pain management in children"
+      "Assessment and intervention for pediatric pain",
+      "Pharmacologic and non-pharmacologic pain control"
     ],
-    "readings": [
-      "Ch 10: Health Assessment of Children",
-      "Ch 14: Pain Management in Children"
-    ],
-    "assignments": [
-      "PrepU Ch 6,7,10,14 due Sept 22 @ 23:00",
-      "PALS Pre\u2011Assessment due Sept 13"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 14 Pain Management in Children" ],
+    "assignments": [ "vSim Pain Scenario due Sept 29" ],
+    "resources": [
+      { "title": "Pain Lecture Notes", "url": "docs/week2-pain.pdf" }
+    ]
   },
   {
-    "title": "Week 3 \u2014 Neurologic & Genetics",
-    "date": "Sept 22\u201328",
+    "title": "Week 3 — Health Assessment of Children",
+    "date": "Sept 22 – Sept 28",
     "topics": [
-      "Neuro A&P differences, behavior/cognition",
-      "Genetic inheritance patterns"
+      "Comprehensive pediatric assessment",
+      "Recognizing developmental milestones and red flags"
     ],
-    "readings": [
-      "Ch 27: Genetics",
-      "Ch 28: Behavior/Cognition/Development"
-    ],
-    "assignments": [
-      "Exam #1 (Ch 3\u20137,10,14) \u2014 Sept 22",
-      "PrepU Ch 27 & 28 due Oct 5 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 10 Health Assessment of Children" ],
+    "assignments": [ "Case Study #1 due Sept 28" ],
+    "resources": [
+      { "title": "Pediatric Assessment Checklist", "url": "docs/week3-assessment.pdf" }
+    ]
   },
   {
-    "title": "Week 4 \u2014 Respiratory & Sensory",
-    "date": "Sept 29\u2013Oct 5",
+    "title": "Week 4 — Child With Chronic Illness",
+    "date": "Sept 29 – Oct 5",
     "topics": [
-      "Otitis media, visual impairment, strep/scarlet fever",
-      "Neuro disorders \u2014 interventions"
+      "Family-centered care of chronically ill children",
+      "Community resources and support"
     ],
-    "readings": [
-      "Ch 12: Special Needs Child",
-      "Ch 16: Intracranial Regulation/Neuro",
-      "Ch 17: Sensory Perception (Eyes/Ears)"
-    ],
-    "assignments": [
-      "PrepU Ch 12,16,17 due Oct 5 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 17 Care of the Child With Chronic Illness" ],
+    "assignments": [ "Kaplan Homework #1 due Oct 5" ],
+    "resources": [
+      { "title": "Chronic Illness Lecture", "url": "docs/week4-chronic.pdf" }
+    ]
   },
   {
-    "title": "Week 5 \u2014 Gas Exchange / Respiratory",
-    "date": "Oct 6\u201312",
+    "title": "Week 5 — Child With Respiratory Disorder",
+    "date": "Oct 6 – Oct 12",
     "topics": [
-      "Prematurity, BPD, RDS, ROP"
+      "Upper and lower respiratory disorders",
+      "Asthma, croup, bronchiolitis, and pneumonia"
     ],
-    "readings": [
-      "Ch 18: Respiratory Disorders"
-    ],
-    "assignments": [
-      "Exam #2 (Ch 16,17,27,28) \u2014 Oct 6",
-      "PrepU Ch 18 due Oct 19 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 18 Care of the Child With Respiratory Disorder" ],
+    "assignments": [ "Exam 1 – Respiratory System Oct 12" ],
+    "resources": [
+      { "title": "Respiratory Slides", "url": "docs/week5-respiratory.pdf" }
+    ]
   },
   {
-    "title": "Week 6 \u2014 Cardiac / Perfusion",
-    "date": "Oct 13\u201319",
+    "title": "Week 6 — Child With Cardiovascular Disorder",
+    "date": "Oct 13 – Oct 19",
     "topics": [
-      "Cardiovascular differences, assessments, treatments",
-      "Rheumatic fever, Jones criteria"
+      "Congenital heart defects and acquired heart disease",
+      "Pre- and post-operative care of cardiac patients"
     ],
-    "readings": [
-      "Ch 19: Perfusion/Cardiac Disorders"
-    ],
-    "assignments": [
-      "PrepU Ch 19 due Oct 19 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 19 Cardiovascular Disorders in Children" ],
+    "assignments": [ "vSim Cardiac Scenario due Oct 20" ],
+    "resources": [
+      { "title": "Cardio Lecture PDF", "url": "docs/week6-cardiac.pdf" }
+    ]
   },
   {
-    "title": "Week 7 \u2014 GI / Bowel & Nutrition",
-    "date": "Oct 20\u201326",
+    "title": "Week 7 — Hematologic & Immune Disorders",
+    "date": "Oct 20 – Oct 26",
     "topics": [
-      "Gastrointestinal A&P, acute vs. chronic",
-      "Hirschsprung, celiac, intussusception, pyloric stenosis"
+      "Anemia, hemophilia, and immune deficiencies",
+      "Safety precautions and infection prevention"
     ],
-    "readings": [
-      "Ch 20: GI/Bowel Elimination"
-    ],
-    "assignments": [
-      "Mid\u2011Term (Ch 3,4,5,6,7,10,12,14,16\u201319,27,28) \u2014 Oct 20",
-      "PrepU Ch 20 due Nov 9 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 21 Hematologic and Immune Disorders" ],
+    "assignments": [ "Exam 2 – Hematology Oct 26" ],
+    "resources": [
+      { "title": "Hematology Slides", "url": "docs/week7-heme.pdf" }
+    ]
   },
   {
-    "title": "Week 8 \u2014 Urinary / Fluid Regulation",
-    "date": "Oct 27\u2013Nov 2",
+    "title": "Week 8 — Neurologic & Musculoskeletal Disorders",
+    "date": "Oct 27 – Nov 2",
     "topics": [
-      "GU A&P, renal insufficiency nutrition",
-      "Psychosocial impact of chronic GU disorders"
+      "Cerebral palsy, spina bifida, muscular dystrophy",
+      "Developmental delays and rehabilitative care"
     ],
-    "readings": [
-      "Ch 21: Urinary/Genitourinary"
-    ],
-    "assignments": [
-      "PrepU Ch 21 due Nov 9 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 22 Neurologic Disorders in Children" ],
+    "assignments": [ "Case Study #2 due Nov 2" ],
+    "resources": [
+      { "title": "Neuro Lecture Notes", "url": "docs/week8-neuro.pdf" }
+    ]
   },
   {
-    "title": "Week 9 \u2014 Tissue Integrity / Skin",
-    "date": "Nov 3\u20139",
+    "title": "Week 9 — Gastrointestinal & Genitourinary Disorders",
+    "date": "Nov 3 – Nov 9",
     "topics": [
-      "Eczema, impetigo, lice, scabies"
+      "Common GI and GU conditions in pediatrics",
+      "Fluid and electrolyte imbalances"
     ],
-    "readings": [
-      "Ch 23: Integumentary Disorders"
-    ],
-    "assignments": [
-      "Burns quiz",
-      "Paper on the movie \u201cDavid\u201d",
-      "PrepU Ch 23 due Nov 16 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 23–24 Gastrointestinal and Genitourinary Disorders" ],
+    "assignments": [ "Exam 3 – GI/GU Nov 9" ],
+    "resources": [
+      { "title": "GI/GU Lecture PDF", "url": "docs/week9-gigu.pdf" }
+    ]
   },
   {
-    "title": "Week 10 \u2014 Infection & Immunity",
-    "date": "Nov 10\u201316",
+    "title": "Week 10 — Endocrine & Metabolic Disorders",
+    "date": "Nov 10 – Nov 16",
     "topics": [
-      "Infectious illnesses in childhood",
-      "Immunodeficiency nursing care",
-      "Immunization review"
+      "Diabetes mellitus and congenital metabolic conditions",
+      "Growth hormone deficiency and thyroid issues"
     ],
-    "readings": [
-      "Ch 15: Infection",
-      "Ch 25: Immunity/Immunologic"
-    ],
-    "assignments": [
-      "Exam #3 (Ch 20 & 21) \u2014 Nov 10",
-      "PrepU Ch 15 & 25 due Nov 16 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 25–26 Endocrine and Metabolic Disorders" ],
+    "assignments": [ "Kaplan Homework #2 due Nov 16" ],
+    "resources": [
+      { "title": "Endocrine Lecture PDF", "url": "docs/week10-endocrine.pdf" }
+    ]
   },
   {
-    "title": "Week 11 \u2014 Endocrine / Metabolism",
-    "date": "Nov 17\u201323",
+    "title": "Week 11 — Integumentary & Communicable Diseases",
+    "date": "Nov 17 – Nov 23",
     "topics": [
-      "Pediatric endocrine system & disorders"
+      "Pediatric skin conditions, rashes, and infectious diseases",
+      "Isolation precautions and family education"
     ],
-    "readings": [
-      "Ch 26: Endocrine/Metabolism"
-    ],
-    "assignments": [
-      "PrepU Ch 26 due Nov 30 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
+    "readings": [ "Ch. 27 and 28 Integumentary and Communicable Diseases" ],
+    "assignments": [ "Exam 4 – Infectious Disorders Nov 23" ],
+    "resources": [
+      { "title": "Infectious Disease Slides", "url": "docs/week11-infectious.pdf" }
+    ]
   },
   {
-    "title": "Week 12 \u2014 Mobility / Musculoskeletal",
-    "date": "Nov 24\u201330",
+    "title": "Week 12 — Pediatric Emergencies & Final Review",
+    "date": "Nov 24 – Dec 1",
     "topics": [
-      "Neuromuscular & musculoskeletal differences",
-      "Meds & treatments; family teaching"
+      "Emergency care and resuscitation of children",
+      "Family support during crisis situations",
+      "Course review and final exam preparation"
     ],
-    "readings": [
-      "Ch 22: Mobility/Neuromuscular or Musculoskeletal"
-    ],
-    "assignments": [
-      "Exam #4 (Ch 15,23,25) \u2014 Nov 24",
-      "PrepU Ch 22 due Nov 30 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
-  },
-  {
-    "title": "Week 13 \u2014 Hematology & Neoplasm",
-    "date": "Dec 1\u20137",
-    "topics": [
-      "Hematologic disorders, childhood cancers",
-      "Labs & diagnostics; priority assessments"
-    ],
-    "readings": [
-      "Ch 24: Cellular Regulation/Heme/Neoplastic",
-      "Ch 13: Key Pediatric Nursing Interventions"
-    ],
-    "assignments": [
-      "Kaplan Prep: Pediatric A/B/C NGN",
-      "PrepU Ch 13 & 24 due Dec 14 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
-  },
-  {
-    "title": "Week 14 \u2014 Emergency & Review",
-    "date": "Dec 8\u201314",
-    "topics": [
-      "Emergency care; leadership & management review"
-    ],
-    "readings": [
-      "Ch 29: Pediatric Emergencies",
-      "Success Review Book Ch 3\u201315 (practice)"
-    ],
-    "assignments": [
-      "Kaplan A/B/C practice \u2014 reach 100% before final",
-      "PrepU Ch 29 due Dec 14 @ 23:00"
-    ],
-    "resources": [],
-    "notes": []
-  },
-  {
-    "title": "Week 15 \u2014 Presentations & Med Math (Adv Med\u2011Surg)",
-    "date": "Dec 15\u201321",
-    "topics": [
-      "Finish genetic presentations; Medication Math (attempt 1)"
-    ],
-    "readings": [],
-    "assignments": [],
-    "resources": [],
-    "notes": []
-  },
-  {
-    "title": "Week 16 \u2014 Comprehensive Final & Kaplan",
-    "date": "Dec 22",
-    "topics": [
-      "Pediatric Final & Kaplan Proctored Exam"
-    ],
-    "readings": [],
-    "assignments": [
-      "NIHSS due Dec 23 (email certificate)",
-      "Medication Math (Adv Med\u2011Surg) attempt 2"
-    ],
-    "resources": [],
-    "notes": [
-      "End\u2011of\u2011semester celebration"
+    "readings": [ "Ch. 29 Pediatric Emergencies" ],
+    "assignments": [ "Final Exam Dec 1 – Cumulative (30%)" ],
+    "resources": [
+      { "title": "Final Review Guide", "url": "docs/week12-final.pdf" }
     ]
   }
 ]
