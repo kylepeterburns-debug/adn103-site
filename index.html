@@ -3,44 +3,118 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ADN103 Pediatric Nursing Care — Fall 2025</title>
-  <meta name="description" content="Week-by-week guide with chapters, tasks, and quick links for students." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>ADN103 Pediatric Nursing Care</title>
+  <style>
+    :root {
+      --primary: #f8bbd0; /* pastel pink */
+      --accent: #90caf9; /* pastel blue */
+      --background: #fff8f9;
+      --text: #333;
+      --nav-bg: #fce4ec;
+      --card-bg: #ffffff;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(90deg, var(--accent), var(--primary));
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: var(--nav-bg);
+      border-bottom: 2px solid var(--primary);
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      padding: 0.8rem 1.2rem;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: var(--accent);
+      color: white;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: var(--accent);
+    }
+    footer {
+      text-align: center;
+      background: var(--nav-bg);
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('section').forEach(sec => sec.style.display = 'none');
+      document.getElementById(pageId).style.display = 'block';
+    }
+    window.onload = function() {
+      showPage('home');
+    }
+  </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>ADN103 — Pediatric Nursing Care (Fall 2025)</h1>
-      <p class="tagline">Week-by-week syllabus with chapters, to‑dos, and download slots</p>
-    </div>
+  <header>
+    <h1>ADN103 Pediatric Nursing Care</h1>
+    <p>Fall 2025 — Cohort 24</p>
   </header>
-
-  <main class="container">
-    <section class="controls">
-      <input id="search" type="search" placeholder="Search weeks, topics, chapters…" />
-      <button id="expandAll">Expand all</button>
-      <button id="collapseAll">Collapse all</button>
-    </section>
-
-    <section id="weeks" class="weeks"></section>
-
-    <section class="notes">
-      <h2>How to add your documents</h2>
-      <ol>
-        <li>Upload your PDF/Doc files into the <code>/docs</code> folder (or host them anywhere and paste links).</li>
-        <li>Edit <code>weeks.json</code> and fill the <em>resources</em> array for each week with titles + URLs.</li>
-        <li>Re-upload this folder to your host (GitHub Pages, Netlify, or your school server).</li>
-      </ol>
-      <p>Tip: You can also add new sections or pages by duplicating this template.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 • Course helper site. Built as a lightweight, no-login static site.</p>
-    </div>
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('schedule')">Weekly Schedule</a>
+    <a href="#" onclick="showPage('submit')">Submit Work</a>
+    <a href="#" onclick="showPage('resources')">Resources</a>
+    <a href="#" onclick="showPage('contact')">Contact</a>
+  </nav>
+  <section id="home">
+    <h2>Welcome!</h2>
+    <p>Welcome to the ADN103 Pediatric Nursing Care course. Use the tabs above to access your weekly schedule, submit work, or find course resources. Stay organized and check back often for updates.</p>
+  </section>
+  <section id="schedule" style="display:none;">
+    <h2>Weekly Schedule</h2>
+    <p>Each week’s objectives, readings, and assignments will appear here. (You can later connect your <code>weeks.json</code> data dynamically if desired.)</p>
+  </section>
+  <section id="submit" style="display:none;">
+    <h2>Submit Work</h2>
+    <p>Submit assignments using the class Google Form or email your instructor. Example:</p>
+    <ul>
+      <li><a href="https://forms.gle/" target="_blank">Google Form Submission</a></li>
+      <li>Email: <a href="mailto:kylepeterburns@gmail.com">kylepeterburns@gmail.com</a></li>
+    </ul>
+  </section>
+  <section id="resources" style="display:none;">
+    <h2>Course Resources</h2>
+    <ul>
+      <li><a href="#">Syllabus (PDF)</a></li>
+      <li><a href="#">Growth & Development Slides</a></li>
+    </ul>
+  </section>
+  <section id="contact" style="display:none;">
+    <h2>Contact</h2>
+    <p><strong>Instructor:</strong> Kyle Belinfante‑Burns<br>
+    <strong>Email:</strong> <a href="mailto:kylepeterburns@gmail.com">kylepeterburns@gmail.com</a><br>
+    <strong>Office Hours:</strong> By appointment<br>
+    <strong>Campus:</strong> High Desert Medical College</p>
+  </section>
+  <footer>
+    &copy; 2025 ADN103 Pediatric Nursing Care | Designed for educational use
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
