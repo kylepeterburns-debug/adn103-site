@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Update This Site</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+<h1>How to Update This Site</h1>
+<p>This is a simple static site — no database, no login. You just edit files and upload.</p>
+<ol>
+  <li><strong>Add your documents:</strong> Put PDFs/Docs into the <code>/docs</code> folder or host them anywhere.</li>
+  <li><strong>Edit the weekly links:</strong> Open <code>weeks.json</code> and add entries under <code>resources</code> for each week.</li>
+  <li><strong>Publish:</strong> Upload the whole folder to Netlify (drag-and-drop) or GitHub Pages.</li>
+</ol>
+
+<h2 id="add-links">Add resource links</h2>
+<pre><code>{
+  "title": "Week 1 …",
+  "resources": [
+    { "title": "Week 1 Slides (PDF)", "url": "docs/week1-slides.pdf" },
+    { "title": "Reading Packet", "url": "https://example.com/packet" }
+  ]
+}</code></pre>
+
+<h2>Quick publish</h2>
+<ul>
+  <li><strong>Netlify:</strong> go to <em>app.netlify.com → Add new site → Deploy manually</em> and drop the folder.</li>
+  <li><strong>GitHub Pages:</strong> push the folder to a repo → Settings → Pages → Source: <em>main / root</em>.</li>
+</ul>
+
+<p>That’s it — once live, share your URL with students.</p>
+</body>
+</html>
